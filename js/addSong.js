@@ -1,7 +1,7 @@
 $(document).ready(function() {
     const songs =[]
     $('#songForm').on('submit', function(event) {
-        event.preventDefault(); // Prevent the default form submission
+        event.preventDefault(); 
 
         // Get form values
         const title = $('#title').val();
@@ -18,7 +18,7 @@ $(document).ready(function() {
         
         setTimeout(function() {
             window.location.href = 'index.html';
-        }, 100); // 100ms delay to ensure the DOM update
+        }, 100); 
     });
 });
 
