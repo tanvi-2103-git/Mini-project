@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Details Form</title>
+    <link rel="stylesheet" href="./style/signin.css">
+    <!-- Include jQuery -->
+</head>
+<body>
+    <header id="navbar-placeholder"></header>
+    <main>
+    <section>
+        <h2>Song Details</h2>
+        <form id="songForm" action="/submit" class="form">
+            <label for="title">Song Title:</label>
+            <input type="text" id="title" name="title" required><br><br>
+
+            <label for="audio">Audio File:</label>
+            <input type="file" id="audio" name="audio" accept="audio/*" required><br><br>
+
+            <label for="image">Image File:</label>
+            <input type="file" id="image" name="image" accept="image/*" required><br><br>
+
+            <label for="artist">Artist:</label>
+            <select id="artist" name="artist" required>
+                <option value="">Select an artist</option>
+                <option value="Artist1">Pritam</option>
+                <option value="Artist2">Arjit Singh</option>
+                <option value="Artist3">A R Rahman</option>
+                <option value="Artist4">Sachin-Jigar</option>
+                <option value="Artist5">Anirudh</option>
+                <option value="Artist6">vishal Mishra</option>
+                <option value="Artist7">Atif Aslam</option>
+            </select><br><br>
+
+            <label for="album">Album:</label>
+            <select id="album" name="album" required>
+                <option value="">Select an album</option>
+                <option value="Album1">Ek Tha Raja</option>
+                <option value="Album2">Divde</option>
+                <option value="Album3">Animal</option>
+                <option value="Album4">Lover</option>
+                <option value="Album5">Moosetape</option>
+                <option value="Album6">Sajani</option>
+                <option value="Album7">Rockstar</option>
+            </select><br><br>
+
+            <input type="submit" value="Submit" >
+        </form>
+    </section></main>
+    <!-- Include your script -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script src="./js/addSong.js"></script>
+    <script>
+        $(document).ready(function() {
+          $("#navbar-placeholder").load("nav.html");
+        });
+      </script>
+</body>
+</html>

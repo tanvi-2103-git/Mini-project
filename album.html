@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALBUM</title>
+    <link rel="stylesheet" href="./style/nav.css">
+
+    
+    <link rel="stylesheet" href="./style/artist.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    
+  </head>
+  <body>
+    <header id="navbar-placeholder"></header>
+    <main id="album">
+    
+    <section class="title" id="albumTitle">
+      <div class="image">
+        <img src="./Media/album/divide.jfif" alt="" id="albumImage" />
+      </div>
+      <div class="name">
+        <h1>Divide</h1>
+        <p>Album</p>
+      </div>
+    </section>
+    <section class="song" id="albumSong">
+      <h1>Popular Songs</h1>
+      <div id="list"> 
+        <div class="songs" id="song1">
+            <div class="songIcon">
+                <img src="./Media/songimage/sajni.jfif" alt="">
+            </div>
+            <div class="songName"><h3>Sajni</h3></div>
+            <div class="timing">
+              <audio src="./Media/songAudio/Agar_Tum_Saath_Ho_Arijit_Singh_Alka.m4a" controls></audio>
+              <!-- <progress id="audioProgress" max="100"></progress>
+              <button id="playbtn">||</button> -->
+            </div>
+          </div>
+       
+           <div class="songs" id="song2">
+            <div class="songIcon">
+                <img src="./Media/songimage/agrtumsathho.jpg" alt="">
+            </div>
+            <div class="songName"><h3>Agar Tum Saath Ho</h3></div>
+            <div class="timing">
+              <audio src="./Media/songAudio/Agar_Tum_Saath_Ho_Arijit_Singh_Alka.m4a" controls></audio>
+              <!-- <progress id="audioProgress" max="100"></progress>
+              <button id="playbtn">|></button> -->
+            </div>
+          </div> 
+          <div class="songs" id="song3">
+            <div class="songIcon">
+                <img src="./Media/songimage/bandeya re bandeya.jpg" alt="">
+            </div>
+            <div class="songName"><h3>Bandeya Rey Bandeya</h3></div>
+            <div class="timing">
+              <audio src="./Media/songAudio/Bandeya Rey Bandeya - Асис Каур и Arijit Singh.m4a" controls></audio>
+            </div>
+          </div> 
+           <div class="songs" id="song4">
+            <div class="songIcon">
+                <img src="./Media/songimage/sataranga.jpg" alt="">
+            </div>
+            <div class="songName"><h3>Satranga</h3></div>
+            <div class="audio">
+              <audio src="./Media/songAudio/Satranga - Arijit Singh.m4a" controls></audio>
+            </div>
+            
+          </div> 
+           <div class="songs" id="song5">
+            <div class="songIcon">
+                <img src="./Media/songimage/hak.jpg" alt="">
+            </div>
+            <div class="songName"><h3>Hamari Adhuri Kahani</h3></div>
+            <div class="audio">
+              <audio src="./Media/songAudio/Hamari Adhuri Kahani - Arijit Singh.m4a" controls></audio>
+            </div>
+            
+          </div> 
+           <div class="songs" id="song6">
+            <div class="songIcon">
+                <img src="./Media/songimage/heeriye.jpg" alt="">
+            </div>
+            <div class="songName"><h3>Heeriye</h3></div>
+            <div class="audio">
+              <audio src="./Media/songAudio/Heeriye - Arijit singh, Shreya ghoshal, Ritu raj, Aishwarya (1).m4a" controls></audio>
+            </div>
+            
+          </div> 
+           <div class="songs" id="song7">
+            <div class="songIcon">
+                <img src="./Media/songimage/hmdard.jpg" alt="">
+            </div>
+            <div class="songName"><h3>Humdard</h3></div>
+            <div class="audio">
+              <audio src="./Media/songAudio/Humdard - Arijit Singh.m4a" controls></audio>
+            </div>
+            
+          </div> 
+           <div class="songs" id="song8">
+            <div class="songIcon">
+                <img src="./Media/songimage/kesariya.jpg" alt="">
+            </div>
+            <div class="songName"><h3>Kesariya</h3></div>
+            <div class="audio">
+              <audio src="./Media/songAudio/Kesariya (From  Brahmastra ) - Pritam.m4a" controls></audio>
+            </div>
+            
+          </div> 
+           <div class="songs" id="song9">
+            <div class="songIcon">
+                <img src="./Media/songimage/lehrado.jpg" alt="">
+            </div>
+            <div class="songName"><h3>Lehra Do</h3></div>
+            <div class="audio"><audio src="./Media/songAudio/Lehra Do (From  83 ) - Pritam.m4a" controls></audio></div>
+            
+          </div> 
+           <div class="songs" id="song10">
+            <div class="songIcon">
+                <img src="./Media/songimage/omaahi.jpg" alt="">
+            </div>
+            <div class="songName"><h3>O Maahi</h3></div>
+            <div class="audio">
+              <audio src="./Media/songAudio/O Maahi - Arijit Singh.m4a" controls></audio>
+            </div>
+            <div class="timing"></div>
+          </div> 
+        
+      </div>
+      <button class="add-button" title="Submit Song Form" onclick="location.href='songform.html'"><i class="fa-solid fa-plus"></i></button>
+    </section></main>
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/8fbb93ec58.js" crossorigin="anonymous"></script>
+    <script src="./js/album.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#navbar-placeholder").load("nav.html");
+      });
+    </script>
+  </body>
+</html>

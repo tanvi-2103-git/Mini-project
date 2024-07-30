@@ -1,0 +1,49 @@
+/* Ensure full height for html and body */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: aliceblue;
+    background: linear-gradient(0deg,#030657,#01021c,#000000);
+}
+
+
+/* Wrapper styling to center content */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 60px); /* Adjust based on navbar height */
+    padding: 20px;
+}
+
+/* Main content styling */
+main {
+    background-color: #0e113a;
+    color: aliceblue;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px; /* Optional: limit the max width of main */
+    text-align: center;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+

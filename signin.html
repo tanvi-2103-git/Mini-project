@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGNIN</title>
+  
+    <link rel="stylesheet" href="./style/nav.css">
+    <link rel="stylesheet" href="./style/signin.css">
+    <style>
+      
+    </style>
+</head>
+<body>
+<header id="navbar-placeholder"></header>
+  
+  <main>
+    
+    <section>
+        <h2>Sign In</h2>
+    <form action="index.html"id="registerForm" class="form">
+        <div>
+          <label for="firstname">Enter First Name:</label>
+          <input
+            id="firstname"
+          />
+        </div>
+        <div class="errorblock">
+          <b id="error1"></b>
+       </div>
+        <br />
+        <div>
+          <label for="lastname">Enter Last name</label>
+          <input id="lastname"/>
+        </div>
+        <div class="errorblock">
+          <b id="error2"></b>
+       </div>
+        <br />
+        <div>
+          <label for="age">Enter Age:</label>
+          <input id="age" placeholder="Age"  type="number" min="18" max="40" />
+        </div>
+        <div class="errorblock">
+          <b id="error3"></b>
+       </div>
+        <br />
+        <div>
+          <label for="email">Enter Email:</label>
+          <input id="mail" placeholder="Enter Email"  type="email" required />
+        </div>
+        <div class="errorblock">
+          <b id="error4"></b>
+       </div>
+        <br />
+        <div>
+          <label for="pass">Enter Password</label>
+          <input
+            id="pass"
+            placeholder="Enter Password"
+            required
+            minlength="5"
+            maxlength="16"
+           
+          />
+          <div class="errorblock">
+            <b id="error5"></b>
+         </div>
+        </div>
+        <br />
+        <div>
+          <label for="confirmPass">Confirm Password</label>
+          <input
+            id="confirmPass"
+            placeholder="Confirm Password"
+            required
+            minlength="5"
+            maxlength="16"
+           
+          />
+          <div class="errorblock">
+            <b id="error6"></b>
+         </div>
+        </div>
+        <input type="submit" >
+        <p>Already sign in? <a href="./login.html">Log in</a></p>
+    </form>
+</section></main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="./js/signin.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#navbar-placeholder").load("nav.html");
+      });
+    </script>
+</body>
+</html>

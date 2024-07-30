@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <header id="navbar-placeholder">
+      
+    </header>
+    <main>
+      <div class="heading">
+        <h1>Popular Artist</h1>
+      </div>
+      <section id="artist">
+        <div class="artists" id="pritam">
+          <div class="image">
+            <img src="./Media/artist/pritam.jfif" alt="" />
+          </div>
+          <div class="name"><h3>Pritam</h3></div>
+          <div class="des"><p>Artist</p></div>
+        </div>
+        <div class="artists" id="arjit" onclick="location.href='artist.html';">
+          <div class="image">
+            <img src="./Media/artist/arjit.jfif" alt="" class="artistImage" />
+          </div>
+          <div class="name"><h3>Arjit Singh</h3></div>
+          <div class="des"><p>Artist</p></div>
+        </div>
+        <div class="artists" id="rahman">
+          <div class="image">
+            <img src="./Media/artist/arrahman.jfif" alt="" class="artistImage" />
+          </div>
+          <div class="name"><h3>A R Rahman</h3></div>
+          <div class="des"><p>Artist</p></div>
+        </div>
+        <div class="artists" id="sachin-jigar">
+          <div class="image">
+            <img src="./Media/artist/sachin-jigar.jfif" alt="" class="artistImage" />
+          </div>
+          <div class="name"><h3>Sachin-Jigar</h3></div>
+          <div class="des"><p>Artist</p></div>
+        </div>
+        <div class="artists" id="anirudh">
+          <div class="image">
+            <img src="./Media/artist/anirudh.jfif" alt="" class="artistImage" />
+          </div>
+          <div class="name"><h3>Anirudh</h3></div>
+          <div class="des"><p>Artist</p></div>
+        </div>
+        <div class="artists" id="vishal">
+          <div class="image">
+            <img src="./Media/artist/vishalMishra.jfif" alt="" class="artistImage" />
+          </div>
+          <div class="name"><h3>Vishal Mishra</h3></div>
+          <div class="des"><p>Artist</p></div>
+        </div>
+        <div class="artists" id="atif-aslam">
+          <div class="image">
+            <img src="./Media/artist/atifAslam.jfif" alt="" class="artistImage" />
+          </div>
+          <div class="name"><h3>Atif Aslam</h3></div>
+          <div class="des"><p>Artist</p></div>
+        </div>
+      </section>
+
+      <div class="heading">
+        <h1>Popular Albums</h1>
+      </div>
+      <section id="album">
+        <div class="albums" id="EkThaRaja" >
+          <div class="imageAlb">
+            <img src="./Media/album/ekThaRaja.jfif" alt="" />
+          </div>
+          <div class="name"><h3>Ek tha raja</h3></div>
+          <div class="des"><p>Album</p></div>
+        </div>
+        <div class="albums" id="divide" onclick="location.href='album.html';">
+          <div class="imageAlb">
+            <img src="./Media/album/divide.jfif" alt="" class="artistImage" />
+          </div>
+          <div class="name"><h3>Divide(deluxe)</h3></div>
+          <div class="des"><p>Album</p></div>
+        </div>
+        <div class="albums" id="animal">
+          <div class="imageAlb">
+            <img src="./Media/album/animal.jpg" alt="" class="artistImage" />
+          </div>
+          <div class="name"><h3>Animal</h3></div>
+          <div class="des"><p>Album</p></div>
+        </div>
+        <div class="albums" id="lover">
+          <div class="imageAlb">
+            <img src="./Media/album/lover.jfif" alt="" class="artistImage" />
+          </div>
+          <div class="name"><h3>Lover</h3></div>
+          <div class="des"><p>Album</p></div>
+        </div>
+        <div class="albums" id="moosetape">
+          <div class="imageAlb">
+            <img src="./Media/album/moosetap.jfif" alt="" class="artistImage" />
+          </div>
+          <div class="name"><h3>Moosetape</h3></div>
+          <div class="des"><p>Album</p></div>
+        </div>
+        <div class="albums" id="sajni">
+          <div class="imageAlb">
+            <img src="./Media/album/sajni.jfif" alt="" class="artistImage" />
+          </div>
+          <div class="name"><h3>Sajni</h3></div>
+          <div class="des"><p>Album</p></div>
+        </div>
+        <div class="albums" id="rockstar">
+          <div class="imageAlb">
+            <img src="./Media/album/rockstar.jfif" alt="" class="artistImage" />
+          </div>
+          <div class="name"><h3>Rockstar</h3></div>
+          <div class="des"><p>Album</p></div>
+        </div>
+        
+      </section>
+
+      
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    
+    <script src="./js/artist.js"></script>
+     
+    <script>
+      $(document).ready(function() {
+        $("#navbar-placeholder").load("nav.html");
+      });
+    </script>
+
+
+    <script>
+      $(document).ready(function() {
+        //arist
+          $('#arjit').click(function(){
+              localStorage.setItem('selectedArtist', 'arjit');
+              window.location.href = 'artist.html';
+          });
+          $('#pritam').click(function(){
+              localStorage.setItem('selectedArtist', 'Pritam');
+               window.location.href = 'artist.html';
+          });
+          $('#rahman').click(function(){
+              localStorage.setItem('selectedArtist', 'rahman');
+                 window.location.href = 'artist.html';
+          });
+          $('#sachin-jigar').click(function(){
+               localStorage.setItem('selectedArtist', 'sachin-jigar');
+                 window.location.href = 'artist.html';
+          });
+          $('#anirudh').click(function(){
+              localStorage.setItem('selectedArtist', 'anirudh');
+               window.location.href = 'artist.html';
+          });
+          $('#vishal').click(function(){
+               localStorage.setItem('selectedArtist', 'vishal');
+                window.location.href = 'artist.html';
+          });
+          $('#atif-aslam').click(function(){
+               localStorage.setItem('selectedArtist', 'atif-aslam');
+                window.location.href = 'artist.html';
+          });
+
+          //album
+          $('#EkThaRaja').click(function(){
+              localStorage.setItem('selectedAlbum', 'EkThaRaja');
+              window.location.href = 'album.html';
+          });
+          
+          $('#animal').click(function(){
+              localStorage.setItem('selectedAlbum', 'animal');
+              window.location.href = 'album.html';
+          });
+          $('#lover').click(function(){
+              localStorage.setItem('selectedAlbum', 'lover');
+              window.location.href = 'album.html';
+          });
+          $('#moosetape').click(function(){
+              localStorage.setItem('selectedAlbum', 'moosetape');
+              window.location.href = 'album.html';
+          });
+          $('#sajni').click(function(){
+              localStorage.setItem('selectedAlbum', 'sajni');
+              window.location.href = 'album.html';
+          });
+          $('#rockstar').click(function(){
+              localStorage.setItem('selectedAlbum', 'rockstar');
+              window.location.href = 'album.html';
+          });
+          $('#divide').click(function(){
+              localStorage.setItem('selectedAlbum', 'divide');
+              window.location.href = 'album.html';
+          });
+
+      });
+  </script>
+  </body>
+</html>

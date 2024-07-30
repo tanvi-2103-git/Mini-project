@@ -1,0 +1,101 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+#art{
+    background-color: #720455;
+}
+#album,#albumTitle{
+    background-color: #4392a2;
+}
+section{
+  padding: 10px;
+}
+.title {
+  background-color: #720455;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  column-gap: 0px;
+}
+
+#albumImage{
+  border-radius: 5%;
+}
+.image > img {
+  border-radius: 95%;
+  width: 250px;
+  height: 250px;
+  padding-right: 10px;
+}
+.name > h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  font-style: bold;
+  padding-top: 20px;
+  margin-bottom: 0px;
+}
+#albumSong{
+  background: linear-gradient(0deg,black,black,black,black,#011823,#4392a2)      
+}
+.song{
+    background: linear-gradient(0deg,black,black,black,black,#23011a,#720455)      
+    /* background-color: black; */
+
+}
+
+.songIcon > img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10%;
+}
+.songs{
+  display: grid;
+  grid-template-columns: 1fr 10fr 10fr;
+  column-gap: 0px;
+  padding: 10px;
+  align-items: center;
+}
+.songs:hover{
+    background-color: rgb(42, 42, 42);
+    box-shadow: 0px 0px 10px grey;
+    
+}
+audio{
+  opacity: 0.4;
+  width: 100%;
+  height: 30px;
+  border: 1px solid #6b2e4f;
+  border-radius: 1em;
+}
+.add-button {
+  position: fixed; 
+  bottom: 50px; 
+  right: 50px;  
+  width: 60px;  
+  height: 60px; 
+  background-color: #4392a2; 
+  color: white; 
+  border: none; 
+  border-radius: 50%; 
+  font-size: 36px; 
+  text-align: center; 
+  line-height: 60px; 
+  cursor: pointer; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+  z-index: 1000; 
+  transition: background-color 0.3s, transform 0.3s; 
+}
+#add-artist-song{
+  background-color: #720455; 
+}
+#add-artist-song:hover{
+  background-color: #4d0e3c; 
+}
+
+.add-button:hover {
+  background-color: #306771; 
+  transform: scale(1.1); 
+}

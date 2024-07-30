@@ -1,0 +1,70 @@
+body{
+    /* background-color: black; */
+    background-image: url("../Media/download.jfif");
+    color: aliceblue;
+}
+
+
+.artists{
+    width: 200px;
+    text-align: center;
+    padding-top: 10px;
+}
+.image>img{
+    height: 150px;
+    width: 150px;
+    border-radius: 95%;
+}
+#artist{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    justify-content: center;
+    justify-items: center;
+
+}
+
+.name>h3{
+    margin-bottom: 0px;
+}
+.des p{
+    margin-top: 0px;
+    color: rgb(201, 201, 201);
+}
+.artists:hover{
+    background-color: rgb(42, 42, 42);
+    box-shadow: 0px 0px 10px grey;
+
+}
+#album{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    justify-content: center;
+    justify-items: center;
+
+}
+.imageAlb>img{
+    height: 180px;
+    width: 170px;
+    border-radius: 5%;
+}
+.albums:hover{
+    background-color: rgb(42, 42, 42);
+    box-shadow: 0px 0px 10px grey;
+   
+}
+.albums{
+    width: 200px;
+    text-align: center;
+    padding-top: 10px;
+}
+#album {
+  position: relative; /* Required for sticky positioning */
+}
+
+@media screen and (max-width: 768px) {
+  #artist, #album {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+  }
+}
