@@ -60,11 +60,11 @@ body{
     padding-top: 10px;
 }
 #album {
-  position: relative; /* Required for sticky positioning */
+  position: relative; 
 }
 
 @media screen and (max-width: 768px) {
   #artist, #album {
-      grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+      grid-template-columns: repeat(2, 1fr); 
   }
 }
