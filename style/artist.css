@@ -99,3 +99,12 @@ audio{
   background-color: #306771; 
   transform: scale(1.1); 
 }
+@media screen and (max-width: 768px) {
+  .title  {
+      grid-template-columns: 1fr; 
+      align-items: center;
+      justify-content: center;
+  }
+  
+
+}
