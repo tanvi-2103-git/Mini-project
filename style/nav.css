@@ -10,11 +10,13 @@ body{
 
     
   }
-  .navbar .search-container {
+  .navbar #search-container {
+    display: flex;
     float: right;
     margin-right: 20px; 
 
   }
+
   .navbar input[type=text] {
     padding: 8px;
     margin-top: 4px;
@@ -27,6 +29,7 @@ body{
   .navbar button {
     padding: 8px;
     margin-top: 4px;
+    margin-right: 2px;
     background: #ccc;
     color: black;
     border: none;
@@ -56,4 +59,11 @@ body{
 
   .navbar a:hover {
     background-color: #555;
+  }
+
+  @media screen and (max-width: 768px) {
+    #searchbar {
+       display: none; 
+    }
+    
   }

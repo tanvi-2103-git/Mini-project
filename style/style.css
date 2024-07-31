@@ -67,4 +67,5 @@ body{
   #artist, #album {
       grid-template-columns: repeat(2, 1fr); 
   }
+  
 }
