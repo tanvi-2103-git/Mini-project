@@ -105,6 +105,10 @@ audio{
       align-items: center;
       justify-content: center;
   }
+  .songName{
+    font-size: small;
+    margin-left: 1rem;
+  }
   
 
 }
