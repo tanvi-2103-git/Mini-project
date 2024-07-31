@@ -61,7 +61,7 @@ body{
     background-color: #555;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 720px) {
     #searchbar {
        display: none; 
     }
