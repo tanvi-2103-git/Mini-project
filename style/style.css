@@ -66,6 +66,11 @@ body{
 @media screen and (max-width: 768px) {
   #artist, #album {
       grid-template-columns: repeat(2, 1fr); 
+
   }
-  
+  img{
+    height: 100px;
+    width: 100px;
+  }
+
 }
